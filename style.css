@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font: inherit;
+  border: none;
+  cursor: pointer;
+  border: 1px solid lightblue;
+  background: #fff100;
+  padding: 8px;
+  border-radius: 5px;
+  white-space: nowrap;
+  transition-property: transform, box-shadow;
+  transition-duration: 600ms;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  font-size: 25px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+button:disabled:active {
+  transition-property: none;
+  transform: none;
+  outline: none;
+  box-shadow: none;
+}
+
+button:active {
+  transform: scale(0.9);
+  outline: 2px solid lightblue;
+  box-shadow: 0 3px 5px -2px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  color: #fff;
+  font-family: 'Bangers', sans-serif;
+  background-image: linear-gradient(to bottom left, #5aff15, #00b712);
+  background-repeat: no-repeat;
+}
+
+#war {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#war img {
+  width: 10%;
+  padding: 5px;
+}
+
+#new-deck {
+  align-self: flex-start;
+}
+
+#draw-cards {
+  align-self: stretch;
+}
+
+#cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 550px;
+}
+
+.card-img {
+  max-width: 80%;
+}
+
+#remaining-card {
+  font-size: 18px;
+  letter-spacing: 2px;
+  padding: 3px;
+}
